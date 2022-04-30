@@ -13,6 +13,8 @@ export default class ProductGrid extends Component {
                 <ProductCard />
                 <ProductCard />
                 <ProductCard />
+                <ProductCard />
+                <ProductCard />
 
             </div>
 

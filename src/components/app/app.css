@@ -8,12 +8,12 @@
 
 .form-cart-box{
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 20px;
 }
 
 .box-part {
-    width: calc(100% / 3);
     display: flex;
 }
 
@@ -23,6 +23,32 @@
 
 .cart-part {
     justify-content: right;
+}
+
+@media (max-width: 720px){
+    .empty-part {
+        display: none;
+    }
+    .form-cart-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cart-part {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 495px){
+
+    .form-cart-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-part {
+        justify-content: center;
+    }
+    .form-part {
+        margin-bottom: 20px;
+    }
+
 }
 
 
