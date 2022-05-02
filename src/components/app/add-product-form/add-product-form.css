@@ -4,14 +4,31 @@
     justify-content: center;
 }
 
+#img-input {
+    display: none;
+}
+
 .add-product-form form .form-input {
     height: 46px;
     width: 250px;
     padding: 0;
     margin-bottom: 16px;
+    font-size: 14px;
+    padding: 0 15px;
     border: 2px solid black;
     border-radius: 6px;
     background-color: #a2c4c9;
+}
+
+.add-product-form form .form-input::placeholder{
+    color: black;
+}
+
+.add-product-form form .form-file-input {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
 }
 
 .add-product-form form .button-wrapper{
@@ -29,4 +46,7 @@
     border: 2px solid black;
     border-radius: 6px;
     background-color: #b6d7a8;
+}
+.add-product-form form .form-input.wrong {
+    border: 4px solid red;
 }

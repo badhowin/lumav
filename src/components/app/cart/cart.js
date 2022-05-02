@@ -7,7 +7,7 @@ export default class Cart extends Component {
 
         return (
 
-            <div className = "cart">Product in cart</div>
+            <div className = "cart">Product in cart { this.props.productInCartCount }</div>
 
         );
     }
